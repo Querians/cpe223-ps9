@@ -1,0 +1,10 @@
+CC=gcc
+CFLAGS=-I.
+
+cacheEC: cacheEC.o
+		$(CC) -o cacheEC cacheEC.o $(CFLAGS)
+
+clean:
+		del -f *.o cacheEC.exe Makefile
+		copy Makefile.orig Makefile
+		del Makefile.orig

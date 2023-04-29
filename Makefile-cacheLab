@@ -1,0 +1,10 @@
+CC=gcc
+CFLAGS=-I.
+
+cacheLab: cacheLab.o
+		$(CC) -o cacheLab cacheLab.o $(CFLAGS)
+
+clean:
+		del -f *.o cacheLab.exe Makefile
+		copy Makefile.orig Makefile
+		del Makefile.orig
