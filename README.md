@@ -4,7 +4,7 @@ This is a lab 9 under **CPE223 : Computer Architecture**.
 ## Pre-Installation
 You should have **c compiler** and **make** to build this project more easier.
 
-We develop by using **MinGW-w64** and **GNU Make 4.3**. However, There are several ways to install them. Because we mainly use window, we use [choco](https://community.chocolatey.org/) to instal these above. By using command
+We develop by using **MinGW-w64** and **GNU Make 4.3**. However, There are several ways to install them. Because we mainly use window, we use [choco](https://community.chocolatey.org/) to install these above by using command
 
 ```bash
 choco install mingw
@@ -59,7 +59,7 @@ make clean
 ## Test Cases
 To test our testcase, just change input [line 408 in file cacheLab.c] or [line 473 in file cacheEC.c] to each file in [test](./test) folder.
 
-### Test Cases Criteria
+### Test Cases Description
 1. Worse case that do not hit any cacheline by access address differ by 16 (0x10).
 ```c
 0 1300 1
@@ -133,7 +133,7 @@ Since the first cache was kicked out from L1 by request from line 5, the sixth l
 > For LRU, the longest access must be kicked first which is (0x99 set 0) instead of (0x98 set 0) that have write in nearest time.
 
 ## Moreover
-We have seperate the file into 2 repositories in replit.com to test it more easier.
+We have seperated the file into 2 repositories in replit.com to test it more easier.
 - [CacheLab - FIFO](https://replit.com/@qimZithe/CPE223-PS9-CacheLab)
 - [CacheEC - LRU](https://replit.com/@qimZithe/CPE223-PS9-CacheEC)
 
